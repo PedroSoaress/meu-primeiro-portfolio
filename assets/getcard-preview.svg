@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#3730a3" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <filter id="shadow-gc" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="220" fill="url(#gc-bg)" rx="8" />
+  
+  <!-- Subtle Grid Lines -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
+  <line x1="0" y1="110" x2="400" y2="110" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
+  <line x1="0" y1="165" x2="400" y2="165" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
+  
+  <!-- Card Mockup with NFC -->
+  <g transform="translate(100, 32)" filter="url(#shadow-gc)">
+    <rect width="200" height="122" rx="12" fill="url(#card-grad)" />
+    <!-- Chip -->
+    <rect x="22" y="44" width="30" height="24" rx="4" fill="#fbbf24" />
+    <line x1="32" y1="44" x2="32" y2="68" stroke="#d97706" stroke-width="1.2" />
+    <line x1="42" y1="44" x2="42" y2="68" stroke="#d97706" stroke-width="1.2" />
+    <!-- NFC Wave -->
+    <path d="M162 26 a14 14 0 0 1 0 18" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M170 20 a22 22 0 0 1 0 30" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.85"/>
+    <!-- Brand Name -->
+    <text x="22" y="100" fill="#ffffff" font-family="'Inter', -apple-system, sans-serif" font-weight="700" font-size="19" letter-spacing="0.5">Getcard</text>
+  </g>
+  <text x="200" y="196" text-anchor="middle" fill="#c7d2fe" font-family="'Inter', -apple-system, sans-serif" font-weight="500" font-size="13" letter-spacing="0.5">Cartão de Visitas Digital NFC</text>
+</svg>

@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ==========================================================================
+   Reset & Base Styles
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #18181b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Fundo degradê pastel exatamente fiel ao design do Figma */
+  background-color: #f7f1fb;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(255, 255, 255, 1) 0px, transparent 55%),
+    radial-gradient(at 100% 0%, rgba(220, 195, 245, 0.65) 0px, transparent 55%),
+    radial-gradient(at 100% 100%, rgba(230, 200, 255, 0.8) 0px, transparent 55%),
+    radial-gradient(at 0% 100%, rgba(235, 210, 250, 0.7) 0px, transparent 55%),
+    radial-gradient(at 50% 50%, rgba(255, 255, 255, 0.4) 0px, transparent 65%);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 40px 20px;
+}
+
+/* ==========================================================================
+   Layout Container
+   ========================================================================== */
+.container {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   Header / Perfil
+   ========================================================================== */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.avatar-wrapper {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 1.5px solid #27272a;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  margin-bottom: 14px;
+  transition: transform 0.3s ease;
+}
+
+.avatar-wrapper:hover {
+  transform: scale(1.03);
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+
+.profile-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  letter-spacing: -0.01em;
+  margin-bottom: 5px;
+}
+
+.profile-subtitle {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #374151;
+}
+
+/* ==========================================================================
+   Tela Inicial - Botões de Navegação
+   ========================================================================== */
+.nav-buttons {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.btn-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 13px 20px;
+  background: rgba(235, 220, 248, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1.2px solid #27272a;
+  border-radius: 8px;
+  color: #18181b;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-action:hover {
+  background: rgba(220, 200, 245, 0.78);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.14);
+}
+
+.btn-action:active {
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Tela Sobre Mim
+   ========================================================================== */
+.about-box {
+  max-width: 580px;
+  margin: 0 auto 24px;
+}
+
+.about-text {
+  font-size: 0.95rem;
+  line-height: 1.68;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* ==========================================================================
+   Tela Meus Projetos - Grid de Cards
+   ========================================================================== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 680px;
+  margin-bottom: 24px;
+}
+
+.project-card {
+  background: rgba(235, 220, 248, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1.2px solid #27272a;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(124, 58, 237, 0.16);
+  border-color: #18181b;
+}
+
+.project-thumb {
+  width: 100%;
+  height: 135px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.project-desc {
+  font-size: 0.82rem;
+  color: #4b5563;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #18181b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-top: auto;
+  transition: all 0.2s ease;
+}
+
+.project-link:hover {
+  gap: 10px;
+  color: #6d28d9;
+}
+
+/* ==========================================================================
+   Botão de Retorno (Voltar)
+   ========================================================================== */
+.back-nav {
+  margin-bottom: 18px;
+}
+
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: #374151;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(39, 39, 42, 0.2);
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+
+.btn-back:hover {
+  color: #111827;
+  border-color: #27272a;
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateX(-2px);
+}
+
+/* ==========================================================================
+   Rodapé & Ícones de Redes Sociais
+   ========================================================================== */
+.footer-social {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #18181b;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
+}
+
+.social-icon-link svg {
+  width: 23px;
+  height: 23px;
+  fill: currentColor;
+}
+
+.social-icon-link:hover {
+  transform: scale(1.18);
+  color: #6d28d9;
+}
+
+/* ==========================================================================
+   Responsividade (Mobile & Tablet)
+   ========================================================================== */
+@media (max-width: 600px) {
+  body {
+    padding: 30px 16px;
+    justify-content: flex-start;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+  }
+
+  .avatar-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-name {
+    font-size: 1.15rem;
+  }
+
+  .profile-subtitle {
+    font-size: 0.88rem;
+  }
+
+  .nav-buttons {
+    max-width: 100%;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+    padding: 0 4px;
+  }
+}
