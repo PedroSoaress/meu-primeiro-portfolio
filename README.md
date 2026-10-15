@@ -1,17 +1,17 @@
-# 🚀 Meu Primeiro Portfólio - Programa Trilhas
+# Meu Primeiro Portfólio - Programa Trilhas
 
 Este projeto é o meu primeiro portfólio desenvolvido como Desenvolvedor Front-end participante do **Programa Trilhas**. A aplicação foi construída com foco em fidelidade de design a partir do protótipo no Figma, empregando boas práticas de HTML5 semântico, CSS3 moderno com gradientes e layouts responsivos, além de controle de versão com Git e GitHub.
 
 ---
 
-## 🌐 Demonstração Online
+## Demonstração Online
 
 Acesse o portfólio em produção via **GitHub Pages**:
 🔗 **[Visualizar Portfólio Online](https://pedrosoaress.github.io/meu-primeiro-portfolio/)**
 
 ---
 
-## 🎨 Funcionalidades e Telas
+## Funcionalidades e Telas
 
 - **Tela Inicial**:
   - Foto de perfil circular com enquadramento focado e borda suave.
@@ -34,7 +34,7 @@ Acesse o portfólio em produção via **GitHub Pages**:
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **HTML5**: Estruturação semântica (`<main>`, `<header>`, `<nav>`, `<section>`, `<article>`, `<footer>`).
 - **CSS3 Moderno**:
@@ -47,7 +47,7 @@ Acesse o portfólio em produção via **GitHub Pages**:
 
 ---
 
-## 💻 Como Visualizar Localmente
+## Como Visualizar Localmente
 
 1. Clone este repositório:
    ```bash
