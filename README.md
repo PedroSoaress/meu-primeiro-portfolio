@@ -25,12 +25,12 @@ Acesse o portfólio em produção via **GitHub Pages**:
 
 - **Página "Meus projetos"**:
   - Grade de cards responsiva (Grid 2x2 no Desktop e 1 coluna em telas mobile).
-  - Vitrine com os projetos e trajetórias reais:
+  - Vitrine com fotos de capa personalizadas em alta definição (16:9) para cada item e trajetórias reais:
     - **Getcard**: Plataforma de cartões de visitas digitais e interativos NFC.
     - **Cartão Getcard**: Landing page oficial para apresentação comercial e aquisição.
     - **Currículo Lattes**: Trajetória acadêmica e produções científicas no CNPq.
     - **Experiências & Trajetória**: Perfil, histórico profissional e artigos no LinkedIn.
-  - Links diretos com animação interativa no botão "Acessar projeto →".
+  - Links diretos com animação interativa nos botões de acesso ("Acessar projeto →" para os projetos e "Acessar →" para trajetória/currículo).
 
 ---
 
@@ -65,6 +65,5 @@ Acesse o portfólio em produção via **GitHub Pages**:
 
 **Pedro Soares**  
 Desenvolvedor Front-end | Programa Trilhas  
-- GitHub: [@PedroSoaress](https://github.com/PedroSoaress)  
 - LinkedIn: [Pedro Soares](https://www.linkedin.com/in/pedro-soares-1592982bb)  
 - Lattes: [Currículo Lattes](http://lattes.cnpq.br/6566179054337172)
