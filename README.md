@@ -4,13 +4,6 @@ Este projeto é o meu primeiro portfólio desenvolvido como Desenvolvedor Front-
 
 ---
 
-## Demonstração Online
-
-Acesse o portfólio em produção via **GitHub Pages**:
-**[Visualizar Portfólio Online](https://pedrosoaress.github.io/meu-primeiro-portfolio/)**
-
----
-
 ## Funcionalidades e Telas
 
 - **Tela Inicial**:
